@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-09-09_1124",
-    "currentPage": "page1.html",
+    "currentPage": "jevinsblog.html",
     "theme": {
       "name": "lawyerm4",
       "title": "LawyerM4",
@@ -611,7 +611,7 @@
         }
       ]
     },
-    "page1.html": {
+    "jevinsblog.html": {
       "settings": {
         "title": "Page 1",
         "order": 1
