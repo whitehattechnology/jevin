@@ -68,60 +68,6 @@
       "components": [
         {
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@reverseContent)": {
-              ".media-container-row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".wrapper": {
-              "width": "(@text_width * 1%)",
-              "@media (max-width: 992px)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (min-width: 992px)": {
-              ".btn": {
-                "margin-left": "0 !important"
-              }
-            },
-            ".mbr-fonts-style": {
-              "font-weight": "300"
-            },
-            ".mbr-arrow": {
-              "background-color": "transparent !important"
-            },
-            ".fa": {
-              "position": "absolute",
-              "left": "23px !important",
-              "top": "8px !important",
-              "font-size": "18px"
-            },
-            ".btn": {
-              "padding": "1rem 2rem",
-              "font-weight": "300"
-            }
-          },
-          "_name": "design-block",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n \n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"range\" inline title=\"Text Width\" name=\"text_width\" min=\"0\" max=\"100\" step=\"1\" value=\"89\" condition=\"showText == true\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Media On Left/Right\" name=\"reverseContent\">\n \n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/maricopa-county-courthouse-october-6-2013-phoenix-arizona-2816x2112-rear-2000x1500.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"media-container-row d-flex align-items-center\">\n            <div class=\"mbr-white col-12 col-lg-6 text-center text-lg-left py-5\">\n                <h1 class=\"mbr-section-title pb-2 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Jevin D. Hodge</b></h1>\n                <p class=\"mbr-text pb-4 mbr-fonts-style wrapper\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Great things are coming to Maricopa County.&nbsp;<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-secondary\" href=\"https://secure.actblue.com/donate/hodgelaunch\" data-app-placeholder=\"Type Text\" target=\"_blank\">DONATE</a>\n                    <a class=\"btn btn-md btn-success\" href=\"https://freedesignblocks.com/\" data-app-placeholder=\"Type Text\">JOIN THE MOVEMENT</a></div>\n            </div>\n            <div class=\"col-8 col-lg-5 mx-auto py-5\">\n                <img src=\"@PROJECT_PATH@/assets/images/jevin-round-pic.v1-414x414.png\" class=\"img-fluid\" alt title>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <span mbr-icon class=\"fa-chevron-down fa\"></span>\n        </a>\n    </div>\n</section>",
-          "_cid": "M1iiIskgHL",
-          "_anchor": "design-block-M1iiIskgHL",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
             ".divider-top": {
               "position": "relative",
               "padding": "2.5em",
