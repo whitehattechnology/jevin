@@ -32,7 +32,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.8",
     "siteFonts": [],
-    "uniqCompNum": 23,
+    "uniqCompNum": 24,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
@@ -66,73 +66,6 @@
         "html_before": ""
       },
       "components": [
-        {
-          "_styles": {
-            ".divider-top": {
-              "position": "relative",
-              "padding": "2.5em",
-              "background": "@bgtop"
-            },
-            ".divider-bottom": {
-              "position": "relative",
-              "padding": "2.5em",
-              "background": "@bgbottom"
-            },
-            ".divider-top::before, .divider-bottom::before, .divider-top::after,  .divider-bottom::after": {
-              "position": "absolute",
-              "content": "''",
-              "pointer-events": "none"
-            },
-            ".divider-triangles::after": {
-              "left": "50%",
-              "width": "100px",
-              "height": "100px",
-              "-webkit-transform": "translateX(-50%) rotate(45deg)",
-              "transform": "translateX(-50%) rotate(45deg)",
-              "bottom": "-50px",
-              "z-index": "10",
-              "background": "inherit"
-            },
-            ".divider-triangles::before": {
-              "top": "-50px"
-            },
-            ".divider-halfcircle::after": {
-              "left": "50%",
-              "z-index": "10",
-              "width": "100px",
-              "height": "100px",
-              "border-radius": "50%",
-              "background": "inherit",
-              "-webkit-transform": "translateX(-50%)",
-              "transform": "translateX(-50%)",
-              "bottom": "-50px"
-            },
-            ".divider-halfcircle::before": {
-              "top": "-50px"
-            },
-            ".divider-multitriangles::before, .divider-multitriangles::after": {
-              "left": "50%",
-              "width": "50px",
-              "height": "50px",
-              "-webkit-transform": "translateX(-50%) rotate(45deg)",
-              "transform": "translateX(-50%) rotate(45deg)"
-            },
-            ".divider-multitriangles::after": {
-              "bottom": "-25px",
-              "z-index": "10",
-              "background": "inherit",
-              "box-shadow": "-50px 50px 0 @bgtop, 50px -50px 0 @bgtop"
-            }
-          },
-          "_name": "design-block",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <select title=\"Type\" name=\"type\">\n         <option value=\"triangles\" selected>Triangles</option>\n         <option value=\"halfcircle\">Halfcircle</option>\n         <option value=\"multitriangles\">Multitriangles</option>        </select>\n        <input type=\"color\" title=\"Background Color Top\" name=\"bgtop\" value=\"#efefef\">        <input type=\"color\" title=\"Background Color Bottom\" name=\"bgbottom\" value=\"#333333\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"divider-top divider-triangles\" mbr-if=\"type == 'triangles'\"></div>    <div class=\"divider-top divider-halfcircle\" mbr-if=\"type == 'halfcircle'\"></div>    <div class=\"divider-top divider-multitriangles\" mbr-if=\"type == 'multitriangles'\"></div>\n    <div class=\"divider-bottom\"></div>\n</section>",
-          "_cid": "A7EGzMjfrH",
-          "_anchor": "design-block-A7EGzMjfrH",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
         {
           "alias": false,
           "_styles": {
