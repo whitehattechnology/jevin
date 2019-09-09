@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "2020 - Jevin Hodge for Board Sup District 1 ",
-    "currentPage": "page1.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "lawyerm4",
       "title": "LawyerM4",
@@ -218,31 +218,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "loadsvg": "@PROJECT_PATH@/assets/images/loading.svg",
-          "_params": {
-            "paddingTop": 0,
-            "paddingBottom": 0,
-            "postToLoad": 3,
-            "facebookToken": "",
-            "facebook": "",
-            "twitter": "JevinHodge",
-            "youtube": "",
-            "bgColorRadio": true,
-            "bgColor": "#fff",
-            "bgImageRadio": false,
-            "bgImage": "@ADDONS_PATH@/social-feed/feed/assets/comments_bg.jpg",
-            "overlay": true,
-            "overlayColor": "#7e9b9f",
-            "overlayOpacity": 0.6
-          },
-          "alias": "social-feed",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "feed",
-          "_anchor": "feed-c"
         },
         {
           "alias": false,
