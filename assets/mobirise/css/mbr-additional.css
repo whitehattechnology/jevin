@@ -138,7 +138,7 @@ body {
   background-color: #444444 !important;
 }
 .bg-success {
-  background-color: #0f7699 !important;
+  background-color: #149dcc !important;
 }
 .bg-info {
   background-color: #82786e !important;
@@ -212,22 +212,22 @@ body {
 .btn-success,
 .btn-success:active,
 .btn-success.active {
-  background-color: #0f7699 !important;
-  border-color: #0f7699 !important;
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
   color: #ffffff !important;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success.focus {
   color: #ffffff !important;
-  background-color: #084053 !important;
-  border-color: #084053 !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
 }
 .btn-success.disabled,
 .btn-success:disabled {
   color: #ffffff !important;
-  background-color: #084053 !important;
-  border-color: #084053 !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
 }
 .btn-warning,
 .btn-warning:active,
@@ -376,21 +376,21 @@ body {
 .btn-success-outline:active,
 .btn-success-outline.active {
   background: none;
-  border-color: #062e3c;
-  color: #062e3c;
+  border-color: #0b566f;
+  color: #0b566f;
 }
 .btn-success-outline:hover,
 .btn-success-outline:focus,
 .btn-success-outline.focus {
   color: #ffffff;
-  background-color: #0f7699;
-  border-color: #0f7699;
+  background-color: #149dcc;
+  border-color: #149dcc;
 }
 .btn-success-outline.disabled,
 .btn-success-outline:disabled {
   color: #ffffff !important;
-  background-color: #0f7699 !important;
-  border-color: #0f7699 !important;
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
 }
 .btn-warning-outline,
 .btn-warning-outline:active,
@@ -473,7 +473,7 @@ body {
   color: #ffa200 !important;
 }
 .text-success {
-  color: #0f7699 !important;
+  color: #149dcc !important;
 }
 .text-info {
   color: #82786e !important;
@@ -500,7 +500,7 @@ a.text-secondary:focus {
 }
 a.text-success:hover,
 a.text-success:focus {
-  color: #062e3c !important;
+  color: #0b566f !important;
 }
 a.text-info:hover,
 a.text-info:focus {
@@ -562,7 +562,7 @@ a:hover {
 }
 .mbr-plan-header.bg-success .mbr-plan-subtitle,
 .mbr-plan-header.bg-success .mbr-plan-price-desc {
-  color: #3cbfec;
+  color: #b4e6f8;
 }
 .mbr-plan-header.bg-info .mbr-plan-subtitle,
 .mbr-plan-header.bg-info .mbr-plan-price-desc {
@@ -786,7 +786,7 @@ body {
   border-top-color: #444444;
 }
 .cid-vDbRDhlVW0 {
-  background-image: url("https://i.imgur.com/JrUOK1d.png");
+  background-image: url("../../../assets/images/maricopa-county-courthouse-october-6-2013-phoenix-arizona-2816x2112-rear-2000x1500.jpg");
 }
 .cid-vDbRDhlVW0 .wrapper {
   width: 90%;
@@ -824,11 +824,12 @@ body {
 .cid-rBBf8Su0Ze .navbar {
   min-height: 77px;
   transition: all .3s;
-  background: #ffffff;
+  background: #767676;
+  background: none;
 }
 .cid-rBBf8Su0Ze .navbar.opened {
   transition: all .3s;
-  background: #ffffff !important;
+  background: #767676 !important;
 }
 .cid-rBBf8Su0Ze .navbar .dropdown-item {
   padding: .25rem 1.5rem;
@@ -913,7 +914,7 @@ body {
   }
 }
 .cid-rBBf8Su0Ze .navbar.navbar-short {
-  background: #ffffff !important;
+  background: #767676 !important;
   min-height: 60px;
 }
 .cid-rBBf8Su0Ze .navbar.navbar-short .navbar-logo img {
@@ -955,7 +956,7 @@ body {
   padding: 0.667em 1.667em;
 }
 .cid-rBBf8Su0Ze .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #767676;
 }
 .cid-rBBf8Su0Ze .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -1060,17 +1061,36 @@ body {
 .cid-rBBf8Su0Ze .nav-link:hover,
 .cid-rBBf8Su0Ze .dropdown-item:hover,
 .cid-rBBf8Su0Ze .icons-menu .mbr-iconfont:hover {
-  color: #c1c1c1 !important;
+  color: #efefef !important;
+}
+.cid-rBBhVsK1WY {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/mbr-1920x1282.jpg");
+}
+.cid-rBBhVsK1WY .signature {
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  color: #ffffff;
+}
+.cid-rBBhVsK1WY .mbr-section-title {
+  letter-spacing: 0.1em;
+}
+.cid-rBBhVsK1WY .card-img {
+  margin-bottom: 1rem;
+}
+.cid-rBBhVsK1WY .card-img span {
+  font-size: 60px;
 }
 .cid-POk8g2tnyW .divider-top {
   position: relative;
   padding: 2.5em;
-  background: #efefef;
+  background: #ffa200;
 }
 .cid-POk8g2tnyW .divider-bottom {
   position: relative;
   padding: 2.5em;
-  background: #879a9f;
+  background: #149dcc;
 }
 .cid-POk8g2tnyW .divider-top::before,
 .cid-POk8g2tnyW .divider-bottom::before,
@@ -1119,25 +1139,7 @@ body {
   bottom: -25px;
   z-index: 10;
   background: inherit;
-  box-shadow: -50px 50px 0 #efefef, 50px -50px 0 #efefef;
-}
-.cid-rBBhVsK1WY {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-image: url("../../../assets/images/05.jpg");
-}
-.cid-rBBhVsK1WY .signature {
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-.cid-rBBhVsK1WY .mbr-section-title {
-  letter-spacing: 0.1em;
-}
-.cid-rBBhVsK1WY .card-img {
-  margin-bottom: 1rem;
-}
-.cid-rBBhVsK1WY .card-img span {
-  font-size: 60px;
+  box-shadow: -50px 50px 0 #ffa200, 50px -50px 0 #ffa200;
 }
 .cid-rBBhXBiHVR {
   padding-top: 90px;
@@ -1171,7 +1173,7 @@ body {
 .cid-rBBi5cvdo9 {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #f7f7f7;
+  background-color: #767676;
 }
 .cid-rBBi5cvdo9 .row {
   -webkit-justify-content: center;
@@ -1227,6 +1229,6 @@ body {
   }
 }
 .cid-rBBi5cvdo9 .links {
-  color: #232323;
+  color: #ffffff;
   text-align: center;
 }
