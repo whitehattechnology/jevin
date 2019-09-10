@@ -1478,3 +1478,23 @@ body {
 .cid-rBBf8Su0Ze .icons-menu .mbr-iconfont:hover {
   color: #efefef !important;
 }
+.cid-rBGto4NXPl {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/04.jpg");
+}
+.cid-rBGto4NXPl .mbr-text {
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+}
+.cid-rBGto4NXPl .card-img span {
+  font-size: 80px;
+  color: #ffffff;
+}
+.cid-rBGto4NXPl .card-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
