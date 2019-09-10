@@ -32,7 +32,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.8",
     "siteFonts": [],
-    "uniqCompNum": 52,
+    "uniqCompNum": 53,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png"
   },
@@ -620,6 +620,42 @@
         {
           "alias": false,
           "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "letter-spacing": "0.03em",
+              "line-height": "1.8"
+            },
+            ".card-img span": {
+              "font-size": "80px",
+              "color": "#ffffff"
+            },
+            ".card-title": {
+              "margin-bottom": "2rem",
+              "text-align": "center",
+              "color": "#ffffff",
+              "letter-spacing": "0.1em"
+            }
+          },
+          "_name": "features5",
+          "_customHTML": "<section class=\"features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"7\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\"> \n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icon\" name=\"showIcon\">\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpeg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#444444\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=l8UXhtqV6hU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#82786e\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-10\">\n                <h4 class=\"card-title py-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">ABOUT JEVIN</h4>\n                <div class=\"card-img pb-3\" mbr-if=\"showIcon\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-file\"></span>\n                </div>\n                <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text,.mbr-section-btn\">\n                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto corporis repudiandae ratione dolorum expedita vitae iusto aspernatur quos magni modi minima veniam quidem fugiat iure odit. Optio, quae quis!\n               </p>\n                <div class=\"mbr-section-btn align-center py-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-white\" href=\"https://mobirise.com\">DOWNLOAD REPORT</a>\n                </div>    \n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rBGw3sWAGQ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features5-1g"
+        },
+        {
+          "alias": false,
+          "_styles": {
             ".nav-item:focus, .nav-link:focus": {
               "outline": "none"
             },
@@ -896,59 +932,6 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".section-text": {
-              "padding": "2rem 0",
-              "letter-spacing": "0.03em"
-            },
-            ".inner-container": {
-              "margin": "0 auto",
-              "position": "relative",
-              ".mbr-iconfont": {
-                "z-index": "1",
-                "position": "absolute",
-                "font-size": "9rem",
-                "color": "#efefef",
-                "opacity": ".1",
-                "&.left-top": {
-                  "left": "-1rem",
-                  "top": "-1rem"
-                },
-                "&.right-down": {
-                  "right": "-1rem",
-                  "bottom": "-1rem"
-                }
-              },
-              ".section-text": {
-                "z-index": "3",
-                "min-height": "10rem"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".inner-container": {
-                "width": "100% !important"
-              },
-              ".mbr-iconfont": {
-                "font-size": "6rem !important"
-              }
-            }
-          },
-          "_name": "article5",
-          "_customHTML": "<section class=\"mbr-section article content10\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"80\">\n<!--         <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"20\"> -->\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#82786e\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <!-- <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\"> -->\n         \n            <div class=\"section-text align-center mbr-white mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".section-text\" mbr-text><br><br>ABOUT JEVIN</div>\n            <!-- <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\"> -->\n        </div>\n    </div>\n</section>",
-          "_cid": "rBGuEYvaCq",
-          "_anchor": "article5-1d",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
           "_params": {}
         },
         {
